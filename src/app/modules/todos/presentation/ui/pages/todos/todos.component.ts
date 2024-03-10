@@ -12,7 +12,7 @@ import { Observable, tap } from 'rxjs';
   styleUrl: './todos.component.scss',
   providers: [GetTodosUseCase]
 })
-export class TodosComponent {
+export default class TodosComponent {
   totalTodos = signal(0)
 
   #getTodosUseCase = inject(GetTodosUseCase);
