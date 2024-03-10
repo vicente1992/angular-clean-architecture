@@ -1,0 +1,11 @@
+<div class="todos">
+    <p class="title">todos works!</p>
+    <p>Totol todos: {{totalTodos()}} </p>
+    <div>
+        @for (item of todos$ | async; track $index) {
+        <span> {{item.title}} </span> <br>
+
+        }
+    </div>
+
+</div>
